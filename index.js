@@ -10,7 +10,8 @@ const port = process.env.PORT || 5000;
 //middleware
 
 app.use(cors({
-    origin: [""]
+    origin: ["https://red-owner.surge.sh"],
+    credentials: true
 }));
 app.use(express.json());
 
